@@ -1,0 +1,656 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22223b;
+}
+
+.registr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.registr::before {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, #80ffdb);
+    /* red, orange, yellow, green, blue */
+    /* background-image: conic-gradient(red, orange, yellow, transparent, transparent); */
+    animation: rotate 1.5s linear infinite;
+}
+
+.registr::after {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, #6930c3);
+    /* background-image: conic-gradient(red, orange, yellow, green, blue); */
+    animation: rotate 1.5s linear infinite;
+    animation-delay: -3s;
+}
+
+.main {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: 2;
+    border-radius: 16px;
+    background-color: #161620;
+}
+
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #4CAF50;
+    background-color: #C8E6C9; */
+    border: 0px;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 12px 12px;
+    border-top: none;
+}
+
+.tab button {
+    background-color: #161620;
+    border: none;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    /* padding: 1px 1px; */
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: gray;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    /* padding: 5px 0px 50px; */
+    margin-left: 15px;
+    
+    
+}
+
+
+.tab button:hover {
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 20px;
+    left: 28px;
+    /* font-size: 25px; */
+    color: white;
+    border: none;
+    /* margin-top: 22px; */
+}
+
+
+
+.tab button.active {
+    background-color: #161620;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    /* top: 55px;
+    left: 30px; */
+    font-size: 23px;
+    color: white;
+    border: none;
+    margin-top: 23px;
+}
+
+
+
+
+
+.sign-up {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 28px;
+    left: 150px;
+    font-size: 20px;
+    color: gray;
+}
+
+.date-name {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 100px;
+    color: white;
+    font-size: 20px;
+    left: 40px;
+    opacity: .7
+}
+.date-pass {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 190px;
+    color: white;
+    font-size: 20px;
+    left: 40px;
+    opacity: .7
+}
+
+.date-pass1 {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 282px;
+    color: white;
+    font-size: 20px;
+    left: 40px;
+    opacity: .7
+}
+
+.date-num {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 192px;
+    color: white;
+    font-size: 20px;
+    left: 40px;
+    opacity: .7
+}
+
+.username {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 350px;
+    height: 35px;
+    
+    border: none;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #8a82b3;
+    opacity: .4
+   
+}
+
+/* .input {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 350px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-clip: padding-box;
+    background-color: #8a82b3;
+    border-radius: 16px;
+
+}
+.text-field__input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+.text-field__input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+} */
+
+input {
+    /* display:block; */
+    
+    /* margin:10px 0; */
+    padding:10px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 14px;
+    
+    
+}
+
+/* .type-2 {
+    background-color: #8a82b3;
+    border: 0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+    opacity: .4
+}
+
+.type-2:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+} */
+.type-1 {
+    position: absolute ;
+    top: 137px;
+    width:80%;
+    left: 25px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+  }
+  .type-1:hover {
+    border: 1px solid #aaa;
+  }
+
+  .type-2 {
+    position: absolute ;
+    top: 317px;
+    width:80%;
+    left:25px;
+    border-radius:10px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+  }
+  .type-2:hover {
+    border: 1px solid #aaa;
+  }
+
+/* .password {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    width: 350px;
+    height: 35px; */
+    /* z-index: 2; */
+    /* border-radius: 16px; */
+    /* background-color: #8a82b3; */
+  
+/* } */
+.type-3 {
+    position: absolute ;
+    top: 227px;
+    width:80%;
+    left:25px;
+    border-radius:10px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+  }
+  .type-3:hover {
+    border: 1px solid #aaa;
+  }
+
+
+  .type-4 {
+    position: absolute ;
+    top: 227px;
+    width:80%;
+    left:25px;
+    border-radius:10px;
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+  }
+  .type-4:hover {
+    border: 1px solid #aaa;
+  }
+
+.keep {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 285px;
+    color: white;
+    font-size: 19px;
+    left: 70px;
+}
+
+.keep-back{
+    position: absolute;
+    top: 290px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    /* z-index: 2; */
+    border-radius: 5px;
+    background-color: #ffa161;
+    
+}
+
+label {
+    position: absolute;
+    top: 285px;
+    left: 95px;
+    width: 40%;
+    height: 50%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding-left:30px; /* free space for custom checkbox */
+    cursor: pointer;
+    color: white;
+  }
+  /* hide default checkbox  */
+  label input[type=checkbox] {
+    position: absolute; /* prevent taking any space */
+    /* cross-browser hidingg */
+   
+    width:0; 
+    height:0;
+    border-radius: 16px;
+  }
+  /* custom checkbox */
+  label span {
+    position: absolute;
+    /* position to the free space in <label> */
+    top: 1px;
+    left:2px;
+    width:22px; 
+    height:22px;
+    background-color: #ddd;
+    transition: .3s background-color; /* slight transition */
+    border-radius: 5px;
+  }
+  /* the check icon */
+  label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+    /* check icon */
+    left: 6px;
+    top: 2px;
+    width: 7px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  label:hover span {
+    background-color: #ccc;
+  }
+  
+  /**** Here's the trick ***/
+  label input:checked ~ span {
+    background-color: #2eaadc;
+  }
+  label input:checked ~ span:after {
+    display:block;
+  }
+
+.line {
+    position: absolute;
+    top: 380px;
+    left: 45px;
+    width: 125px;
+    height: 2px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #8a82b3;
+    opacity: .4
+}
+.line1 {
+    position: absolute;
+    top: 70px;
+    left: 87px;
+    width: 90px;
+    height: 3px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #2eaadc;
+    
+}
+.line3 {
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    width: 90px;
+    height: 3px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #2eaadc;
+   
+}
+
+.line4 {
+    position: absolute;
+    top: 380px;
+    left: 45px;
+    width: 300px;
+    height: 3px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #8a82b3;
+    opacity: .4;
+}
+
+.line2 {
+    position: absolute;
+    top: 380px;
+    left: 200px;
+    width: 125px;
+    height: 2px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #8a82b3;
+    opacity: .4
+}
+
+.or {
+    position: absolute;
+    color: #8a82b3;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 370px;
+    left: 173px;
+    width: 125px;
+    opacity: .4
+}
+
+
+.signin{
+    position: absolute;
+    top: 330px;
+    left: 20px;
+    width: 350px;
+    height: 35px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #2eaadc;
+   
+}
+
+.sign-in1 {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 3px;
+    color: white;
+    font-size: 19px;
+    left: 125px;
+}
+
+
+.signup{
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    width: 350px;
+    height: 35px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #2eaadc;
+   
+}
+
+.signup:hover {
+    position: absolute;
+    top: 398px;
+    left: 18px;
+    width: 353px;
+    height: 38px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #2eaadc;
+    transition: .3s
+}
+
+.sign-up1 {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 3px;
+    color: white;
+    font-size: 19px;
+    left: 125px;
+}
+
+.signin:hover {
+    position: absolute;
+    top: 328px;
+    left: 18px;
+    width: 353px;
+    height: 38px;
+    /* z-index: 2; */
+    border-radius: 16px;
+    background-color: #2eaadc;
+    transition: .3s
+}
+
+
+
+
+.forgot {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 453px;
+    color: #8a82b3;
+    font-size: 15px;
+    left: 125px;
+    opacity: .4
+}
+.forgot:hover {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 450px;
+    color: #8a82b3;
+    font-size: 20px;
+    left: 113px;
+    transition: .3s;
+    opacity: .4;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.facebook {
+    position: absolute;
+    width: 13%;
+    top: 393px;
+    left: 55px;
+}
+.instagram {
+    position: absolute;
+    width: 13%;
+    top: 393px;
+    left: 120px;
+}
+.telegram {
+    position: absolute;
+    width: 13%;
+    top: 393px;
+    left: 200px;
+}
+.twitter {
+    position: absolute;
+    width: 13%;
+    top: 393px;
+    left: 263px;
+}
+.twitter:hover {
+    position: absolute;
+    width: 16%;
+    top: 390px;
+    left: 258px;
+    transition: 0.3s;
+}
+.telegram:hover {
+    position: absolute;
+    width: 16%;
+    top: 390px;
+    left: 193px;
+    transition: 0.3s;
+}
+.instagram:hover {
+    position: absolute;
+    width: 16%;
+    top: 390px;
+    left: 115px;
+    transition: 0.3s;
+}
+.facebook:hover {
+    position: absolute;
+    width: 16%;
+    top: 390px;
+    left: 50px;
+    transition: 0.3s;
+   
+}
+
+.password1 {
+	position: relative;
+}
+.password-control1 {
+	position: absolute;
+	top: 326px;
+	left: 320px;
+	/* display: inline-block; */
+	width: 23px;
+	height: 23px;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+    opacity: .2;
+}
+/* .password-control1.view {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+} */
+
+
+.password {
+	position: relative;
+}
+.password-control {
+	position: absolute;
+	top: 237px;
+	left: 320px;
+	/* display: inline-block; */
+	width: 23px;
+	height: 23px;
+	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+    opacity: .2;
+}
+.password-control.keep-back {
+	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.Problems {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 453px;
+    color: #8a82b3;
+    font-size: 15px;
+    left: 100px;
+    opacity: .4
+}
+.Problems:hover {
+    position: absolute;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    top: 450px;
+    color: #8a82b3;
+    font-size: 20px;
+    left: 75px;
+    transition: .3s;
+    opacity: .4;
+}

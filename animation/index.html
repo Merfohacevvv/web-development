@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="brawl stars.png"/>
+</head>
+<body>
+    
+    <div>
+        <div class="registr">
+            <span class="main">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Sign')">SIGN IN</button>
+                    <button class="tablinks" onclick="openCity(event, 'Sign1')">SIGN UP</button>
+                </div>
+                <!-- <div class="sign-in">SIGN IN</div>
+                <div class="sign-up">SIGN UP</div>
+                <div class="date-name">username</div>
+                <div class="date-pass">password</div>
+                <span class="username"></span>
+                <span class="password"></span>
+                <div class="keep">Keep Me Signed In</div>
+                <span class="keep-back"></span>
+                <span class="line"></span>
+                <span class="line1"></span>
+                <span class="signin"></span>
+                <div class="forgot">Forgot password</div>
+                <div class="sign-in1">SIGN IN</div> -->
+                <div id="Sign" class="tabcontent">
+                    <!-- <div class="sign-in">SIGN IN</div> -->
+                    <!-- <div class="sign-up">SIGN UP</div> -->
+                    <div class="date-name">username\email</div>
+                    <div class="date-pass">password</div>
+                    <!-- <span class="username"><input type="text" size="40" ></span> -->
+                    <input type="text" class="type-1" placeholder="Enter username\email:">
+                    <input type="password" id="password-input" class="type-4" placeholder="Enter password:">
+                    <a href="#" class="password-control"></a>
+                    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+                        <script>
+                        $('body').on('click', '.password-control', function(){
+                            if ($('#password-input').attr('type') == 'password'){
+                                $(this).addClass('view');
+                                $('#password-input').attr('type', 'text');
+                            } else {
+                                $(this).removeClass('view');
+                                $('#password-input').attr('type', 'password');
+                            }
+                            return false;
+                        });
+                        </script>
+                    <label>Keep Me Signed In
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    <span class="password"></span>
+                    <!-- <div class="keep">Keep Me Signed In</div>
+                    <span class="keep-back"></span> -->
+                    <span class="line"></span>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <div class="or">OR</div>
+                    <!-- <span class="line1"></span> -->
+                    <span class="signin">
+                        <div class="sign-in1">SIGN IN</div>
+                    </span>
+                    <div class="forgot">Forgot password?</div>
+                    
+                    <img src="facebook.png" class="facebook">
+                    <img src="instagram.png" class="instagram">
+                    <img src="telegram.png" class="telegram">
+                    <img src="twitter.png" class="twitter">
+                </div>
+                  
+                <div id="Sign1" class="tabcontent">
+                    <div class="date-name">username\email</div>
+                    <div class="date-pass1">password</div>
+                    <div class="date-num">phone number</div>
+                    <input type="text" class="type-1" placeholder="Enter username\email:">
+                    <input type="text" class="type-3" placeholder="Enter phone number:">
+                    <input type="password" id="password-input1" class="type-2" placeholder="Enter password:">
+                    <a href="#" class="password-control1"></a>
+                    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+                    <!-- <script>
+                    $('body').on('click', '.password-control', function(){
+                        if ($('#password-input').attr('type') == 'password'){
+                            $(this).addClass('view');
+                            $('#password-input').attr('type', 'text');
+                        } else {
+                            $(this).removeClass('view');
+                            $('#password-input').attr('type', 'password');
+                        }
+                        return false;
+                    });
+                    </script> -->
+                    <span class="signup">
+                        <div class="sign-up1">SIGN UP</div>
+                    </span>
+                    <!-- <div class="sign-up">SIGN UP</div> -->
+                    <!-- <div class="date-name">username\email</div>
+                    <div class="date-pass">password</div> -->
+                    <!-- <div class="date-email">email</div> -->
+                    <!-- <span class="username"></span>
+                    <span class="password"></span> -->
+                    <!-- <span class="email"></span> -->
+                    <!-- <div class="keep">Keep Me Signed In</div>
+                    <span class="keep-back"></span> -->
+                    <!-- <span class="line"></span> -->
+                    <span class="line4"></span>
+                    <span class="line3"></span>
+                    <!-- <span class="line1"></span> -->
+                    <!-- <span class="signin"></span> -->
+                    <!-- <div class="forgot">Forgot password</div> -->
+                    <!-- <div class="sign-in1">SIGN UP</div> -->
+                    <div class="Problems">Problems with SIGN UP?</div>
+                </div>
+                
+            </span>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
