@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <h3>Front-end проекты</h3>
+  <h3>IT проекты</h3>
 </div>
 
 ### :man_technologist: Обо мне :
